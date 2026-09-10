@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مدرسة نور الهدى الأساسية المختلطة</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0d47a1;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+left:0;
+right:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+border-radius:50%;
+background:white;
+object-fit:cover;
+}
+
+.logo h2{
+font-size:22px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd54f;
+}
+
+.hero{
+
+height:100vh;
+
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/hero-bg.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:55px;
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-bottom:25px;
+
+}
+
+.btn{
+
+background:#ff9800;
+padding:14px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:#fb8c00;
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+font-size:35px;
+color:#0d47a1;
+margin-bottom:20px;
+text-align:center;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+color:#0d47a1;
+margin-bottom:10px;
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+
+}
+
+.gallery img.crop-bottom{
+object-position: center bottom;
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+footer{
+
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+left:20px;
+
+background:#25D366;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+input,textarea{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+
+}
+
+button{
+
+background:#0d47a1;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#1565c0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="images/logo.png" alt="شعار المدرسة">
+
+<div>
+
+<h2>مدرسة نور الهدى</h2>
+
+<p>نور على نور</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#home">الرئيسية</a>
+
+<a href="#about">عن المدرسة</a>
+
+<a href="#gallery">المعرض</a>
+
+<a href="#news">الأخبار</a>
+
+<a href="#contact">اتصل بنا</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>مدرسة نور الهدى الأساسية المختلطة</h1>
+
+<p>
+
+بنين وبنات
+
+<br>
+
+قرية منهازا محمود عبدالسلام
+
+</p>
+
+<a href="#about" class="btn">
+
+تعرف علينا
+
+</a>
+
+</div>
+
+</section>
+<!-- ===================== -->
+<!-- عن المدرسة -->
+<!-- ===================== -->
+
+<section id="about">
+
+<h2 class="title">عن المدرسة</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>نبذة عن المدرسة</h3>
+
+<p>
+
+مدرسة نور الهدى الأساسية المختلطة هي مؤسسة تعليمية تربوية تقع بقرية منهازا محمود عبدالسلام بمحلية السوكي – ولاية سنار، وتسعى إلى تقديم تعليم متميز يجمع بين الجودة الأكاديمية والقيم الإسلامية والأخلاق الحميدة في بيئة تعليمية آمنة ومحفزة.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>رؤيتنا</h3>
+
+<p>
+
+أن تكون مدرسة نور الهدى من المدارس الرائدة في التعليم الأساسي، وأن تساهم في إعداد جيل واعٍ ومتميز علمياً وأخلاقياً قادر على خدمة وطنه ومجتمعه.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>رسالتنا</h3>
+
+<p>
+
+توفير بيئة تعليمية حديثة تشجع على التعلم والإبداع، وتنمية شخصية الطالب علمياً وسلوكياً، مع تعزيز التعاون بين المدرسة والأسرة والمجتمع.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>أهدافنا</h3>
+
+<ul>
+
+<li>رفع المستوى العلمي للطلاب.</li>
+
+<li>غرس القيم الإسلامية.</li>
+
+<li>تنمية الإبداع والابتكار.</li>
+
+<li>الاهتمام بالأنشطة الثقافية والرياضية.</li>
+
+<li>تعزيز الشراكة مع المجتمع.</li>
+
+<li>استخدام الوسائل التعليمية الحديثة.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- كلمة المديرة -->
+<!-- ===================== -->
+
+<section>
+
+<h2 class="title">كلمة مديرة المدرسة</h2>
+
+<div class="card">
+
+<h3>الأستاذة / حنان عبدالله</h3>
+
+<p>
+
+بسم الله الرحمن الرحيم...
+
+يسرني أن أرحب بكم في الموقع الإلكتروني لمدرسة نور الهدى الأساسية المختلطة.
+
+نسعى إلى بناء جيل متعلم ومتميز يجمع بين العلم والأخلاق، ويكون قادراً على مواجهة تحديات المستقبل بثقة وكفاءة.
+
+كما نؤمن بأن نجاح الطالب هو ثمرة تعاون المدرسة مع الأسرة والمجتمع، لذلك نحرص على توفير بيئة تعليمية آمنة ومحفزة للإبداع والتميز.
+
+نسأل الله التوفيق والسداد لجميع أبنائنا وبناتنا.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- إحصائيات -->
+<!-- ===================== -->
+
+<section>
+
+<h2 class="title">إحصائيات المدرسة</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h1 style="color:#0d47a1;font-size:45px;">350+</h1>
+
+<p>طالب وطالبة</p>
+
+</div>
+
+<div class="card">
+
+<h1 style="color:#0d47a1;font-size:45px;">20+</h1>
+
+<p>معلم ومعلمة</p>
+
+</div>
+
+<div class="card">
+
+<h1 style="color:#0d47a1;font-size:45px;">12</h1>
+
+<p>فصل دراسي</p>
+
+</div>
+
+<div class="card">
+
+<h1 style="color:#0d47a1;font-size:45px;">100%</h1>
+
+<p>بيئة تعليمية آمنة</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- الإدارة والمعلمون -->
+
+<section id="teachers">
+
+<h2 class="title">الإدارة والمعلمون</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>مديرة المدرسة</h3>
+<p><strong>الأستاذة / حنان عبدالله</strong></p>
+<p>
+تقود المدرسة بروح المسؤولية، وتسعى إلى تطوير العملية التعليمية، وبناء بيئة تعليمية متميزة لجميع الطلاب.
+</p>
+</div>
+
+<div class="card">
+<h3>المعلمون</h3>
+<p>
+تضم المدرسة نخبة من المعلمين والمعلمات ذوي الخبرة والكفاءة، ويعملون بروح الفريق لتحقيق أفضل النتائج التعليمية.
+</p>
+</div>
+
+<div class="card">
+<h3>الأنشطة المدرسية</h3>
+<p>
+القرآن الكريم، النشاط الثقافي، النشاط الرياضي، الكشافة، والبرامج التربوية المختلفة.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- الفصول -->
+
+<section id="classes">
+
+<h2 class="title">الفصول والمناهج</h2>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#0d47a1;color:white;">
+
+<th style="padding:12px;">الصف</th>
+<th>الالمرحلة</th>
+<th>نوع الدراسة</th>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">الأول</td>
+<td>الأساس</td>
+<td>مختلط</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">الثاني</td>
+<td>الأساس</td>
+<td>مختلط</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">الثالث</td>
+<td>الأساس</td>
+<td>مختلط</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">الرابع</td>
+<td>الأساس</td>
+<td>مختلط</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">الخامس</td>
+<td>الأساس</td>
+<td>مختلط</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">السادس</td>
+<td>الأساس</td>
+<td>مختلط</td>
+
+</tr>
+
+</table>
+
+</section>
+<!-- ========================= -->
+<!-- معرض الصور -->
+<!-- ========================= -->
+
+<section id="gallery">
+
+<h2 class="title">معرض صور المدرسة</h2>
+
+<div class="gallery">
+
+<img src="images/school1.jpg" alt="صورة المدرسة" class="crop-bottom">
+
+<img src="images/school2.jpg" alt="ساحة المدرسة">
+
+<img src="images/school3.jpg" alt="مبنى المدرسة">
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- الأخبار والإعلانات -->
+<!-- ========================= -->
+
+<section id="news">
+
+<h2 class="title">آخر الأخبار والإعلانات</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📢 إعلان</h3>
+
+<p>
+
+ترحب إدارة مدرسة نور الهدى الأساسية المختلطة بجميع الطلاب وأولياء الأمور، وتتمنى للجميع عامًا دراسيًا مليئًا بالنجاح والتفوق.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎓 نتائج الطلاب</h3>
+
+<p>
+
+سيتم نشر نتائج الامتحانات عبر هذا الموقع فور اعتمادها من إدارة المدرسة.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 الأنشطة</h3>
+
+<p>
+
+تنظم المدرسة مسابقات ثقافية ورياضية ودينية بصورة دورية لتنمية مواهب الطلاب.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- التسجيل الإلكتروني -->
+<!-- ========================= -->
+
+<section id="register">
+
+<h2 class="title">التسجيل الإلكتروني</h2>
+
+<form>
+
+<input type="text" placeholder="اسم الطالب" required>
+
+<input type="text" placeholder="اسم ولي الأمر" required>
+
+<input type="tel" placeholder="رقم الهاتف" required>
+
+<input type="text" placeholder="الصف الدراسي">
+
+<textarea placeholder="ملاحظات إضافية"></textarea>
+
+<button type="submit">
+
+إرسال الطلب
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ========================= -->
+<!-- نتائج الطلاب -->
+<!-- ========================= -->
+
+<section id="results">
+
+<h2 class="title">الاستعلام عن النتائج</h2>
+
+<div class="card">
+
+<input type="text" placeholder="أدخل رقم الجلوس">
+
+<button>
+
+بحث
+
+</button>
+
+<p style="margin-top:20px;color:#666;">
+
+سيتم ربط هذه الصفحة لاحقًا بقاعدة بيانات لعرض نتائج الطلاب.
+
+</p>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- التبرعات -->
+<!-- ========================= -->
+
+<section id="donation">
+
+<h2 class="title">دعم المدرسة</h2>
+
+<div class="card">
+
+<h3>ساهم في تطوير المدرسة</h3>
+
+<p>
+
+تسعد إدارة مدرسة نور الهدى الأساسية المختلطة باستقبال مساهمات أهل الخير لدعم العملية التعليمية وتطوير البيئة المدرسية.
+
+</p>
+
+<p>
+
+<strong>اسم الحساب:</strong> مدرسة نور الهدى
+
+</p>
+
+<p>
+
+<strong>رقم الحساب:</strong> 5736694
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- اتصل بنا -->
+<!-- ========================= -->
+
+<section id="contact">
+
+<h2 class="title">اتصل بنا</h2>
+
+<div class="card">
+
+<p><strong>📍 الموقع:</strong><br>
+قرية منهازا محمود عبدالسلام<br>
+محلية السوكي - ولاية سنار</p>
+
+<p><strong>📞 الهاتف:</strong><br>
+0906799171<br>
+0129267497</p>
+
+<p><strong>📧 البريد الإلكتروني:</strong><br>
+alnoormohmoudmohmoud@gmail.com</p>
+
+<p>
+
+<a href="YOUR_GOOGLE_MAPS_LINK" target="_blank" class="btn">
+
+📍 فتح الموقع على الخريطة
+
+</a>
+
+</p>
+
+<p>
+
+<a href="https://wa.me/249906799171" target="_blank" class="btn">
+
+💬 التواصل عبر واتساب
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- زر واتساب -->
+
+<a href="https://wa.me/249906799171" class="whatsapp" target="_blank">
+
+💬
+
+</a>
+
+<!-- التذييل -->
+
+<footer>
+
+<h3>مدرسة نور الهدى الأساسية المختلطة</h3>
+
+<p>
+
+نور على نور
+
+</p>
+
+<br>
+
+<p>
+
+جميع الحقوق محفوظة © 2026
+
+</p>
+
+<br>
+
+<p>
+
+Designed & Developed by
+
+<strong>Beark Technology</strong>
+
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll",function(){
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="#08306b";
+
+}else{
+
+header.style.background="#0d47a1";
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
